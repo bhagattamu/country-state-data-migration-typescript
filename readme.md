@@ -52,7 +52,8 @@ $ npm run devStart
 - First it will build .ts file into dist folder
 - It will run migrate.js file which is in country-migrate folder
 - migrate.js file migrate country and state into database
-- After migration nest app is run in debug mode
+- After migration app is run
+- Test http://localhost:8000/country for data migration success
 
 ### Migration Documentation
 
