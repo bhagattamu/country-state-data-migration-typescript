@@ -1,0 +1,30 @@
+{
+  "name": "data-migration-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "npm run build && npm run start:migrate && npm start",
+    "start": "node ./dist/src/app.js",
+    "build": "tsc",
+    "start:migrate": "node dist/country-migrate/migrate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "migrate-mongoose": "^4.0.0",
+    "mongoose": "^5.11.11"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.9",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.11",
+    "@types/mongoose": "^5.10.3",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
