@@ -1,5 +1,3 @@
-# Casey Web
-
 ## Country-state data migration
 
 - Migrate country and state data to mongodb after building app
